@@ -41,3 +41,10 @@ Grundregel:
 ```
 git push
 ```
+
+## Wichtig
+* Immer die aktuelle Version des Repositories verwenden bevor man anfängt zu arbeiten!
+  ```
+  git pull
+  ```
+* Für abgetrennte Arbeiten/Issues bitte eigene Branches erstellen. Dann kommen wir uns nicht gegenseitig in die Quere.
