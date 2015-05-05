@@ -39,5 +39,5 @@ Grundregel:
 
 Änderungen hochladen:
 ```
-        git push
+git push
 ```
