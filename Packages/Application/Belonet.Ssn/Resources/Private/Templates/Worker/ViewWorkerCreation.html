@@ -1,0 +1,14 @@
+<f:layout name="Default"/>
+
+<f:section name="Title">Show worker html</f:section>
+
+
+<f:section name="Content">
+    <div class="container">
+    <f:form action="createNewWorker" controller="Worker" name="worker" object="{worker}" method="post" enctype="multipart/formdata">
+        <f:form.textfield property="workerId"/>
+        <f:form.submit name="submit" value="submit"/>
+    </f:form>
+    </div>
+</f:section>
+

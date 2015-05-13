@@ -1,0 +1,13 @@
+<f:layout name="Default"/>
+
+<f:section name="Title">Show worker html</f:section>
+
+<f:section name="Content">
+    <div class="container">
+        <ul>
+        <f:for each="{allWorkers}" as="worker">
+            <li>{worker.workerId}</li>
+        </f:for>
+        </ul>
+    </div>
+</f:section>
