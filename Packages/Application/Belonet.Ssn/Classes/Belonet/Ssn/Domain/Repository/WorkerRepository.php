@@ -1,5 +1,5 @@
 <?php
-namespace Bachelorarbeit\Tests\Domain\Repository;
+namespace Belonet\Ssn\Domain\Repository;
 /**
  * Created by PhpStorm.
  * User: Veronika

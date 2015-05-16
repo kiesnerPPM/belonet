@@ -1,8 +1,8 @@
 <?php
-namespace Bachelorarbeit\Tests\Controller;
+namespace Belonet\Ssn\Controller;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "Bachelorarbeit.Tests".  *
+ * This script belongs to the TYPO3 Flow package "Belonet.Ssn".  *
  *                                                                        *
  *                                                                        */
 
@@ -18,7 +18,7 @@ class WorkerController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
     /**
      * @Flow\Inject
-     * @var \Bachelorarbeit\Tests\Domain\Repository\WorkerRepository
+     * @var \Belonet\Ssn\Domain\Repository\WorkerRepository
      */
     protected $workerRepository;
 
@@ -26,7 +26,7 @@ class WorkerController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
 
 	/**
- * @param \Bachelorarbeit\Tests\Domain\Model\Worker $worker
+ * @param \Belonet\Ssn\Domain\Model\Worker $worker
  * @return void
  */
     public function showWorkerDataAction() {
@@ -53,12 +53,12 @@ class WorkerController extends \TYPO3\Flow\Mvc\Controller\ActionController {
     }
 
     /**
-     * @param \Bachelorarbeit\Tests\Domain\Model\Worker $worker
+     * @param \Belonet\Ssn\Domain\Model\Worker $worker
      */
-    public function createNewWorkerAction(\Bachelorarbeit\Tests\Domain\Model\Worker $worker){
+    public function createNewWorkerAction(\Belonet\Ssn\Domain\Model\Worker $worker){
         /**
          * 1. Version, worker wird statisch angelegt
-        *$worker = new \Bachelorarbeit\Tests\Domain\Model\Worker();
+        *$worker = new \Belonet\Ssn\Domain\Model\Worker();
         *$worker->setWorkerId("abcd");
         *$this->workerRepository->add($worker);
         *$this->persistenceManager->persistAll();
