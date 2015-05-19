@@ -3,11 +3,14 @@
 <f:section name="Title">Show worker html</f:section>
 
 <f:section name="Content">
+    <f:link.action action="viewWorkerCreation">Create worker</f:link.action>
     <div class="container">
         <ul>
-        <f:for each="{allWorkers}" as="worker">
-            <li>{worker.workerId}</li>
-        </f:for>
+            <f:for each="{allWorkers}" as="worker">
+                <li>{worker.workerId}
+                    <f:link.action action="confirmWorkerDeletion" arguments="{worker: worker}">delete</f:link.action>
+                </li>
+            </f:for>
         </ul>
     </div>
 </f:section>

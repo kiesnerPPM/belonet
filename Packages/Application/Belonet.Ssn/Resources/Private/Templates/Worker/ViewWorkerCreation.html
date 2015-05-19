@@ -5,10 +5,12 @@
 
 <f:section name="Content">
     <div class="container">
-    <f:form action="createNewWorker" controller="Worker" name="worker" object="{worker}" method="post" enctype="multipart/formdata">
-        <f:form.textfield property="workerId"/>
-        <f:form.submit name="submit" value="submit"/>
-    </f:form>
+        <f:form action="createNewWorker" controller="Worker" name="worker" object="{worker}" method="post"
+                enctype="multipart/formdata">
+            <f:form.textfield property="workerId"/>
+            <f:form.submit name="submit" value="submit"/>
+        </f:form>
+        <f:link.action action="showWorkerData">cancel</f:link.action>
     </div>
 </f:section>
 

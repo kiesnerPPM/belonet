@@ -1,0 +1,11 @@
+<f:layout name="Default"/>
+
+<f:section name="Title">Show worker html</f:section>
+
+<f:section name="Content">
+    <div class="container">
+        <p>Do you really want to delete worker "{worker.workerId}"?</p>
+        <f:link.action action="deleteWorker" arguments="{worker: worker}">yes</f:link.action>
+        <f:link.action action="showWorkerData">no</f:link.action>
+    </div>
+</f:section>
